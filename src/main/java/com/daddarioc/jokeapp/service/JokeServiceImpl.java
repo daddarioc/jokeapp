@@ -14,10 +14,7 @@ public class JokeServiceImpl implements JokeService {
         this.quotes = new ChuckNorrisQuotes();
     }
 
-    public Joke getJoke() {
-
-        myJoke.setJoke(quotes.getRandomQuote());
-
-        return myJoke;
+    public String getJoke() {
+        return quotes.getRandomQuote();
     }
 }
